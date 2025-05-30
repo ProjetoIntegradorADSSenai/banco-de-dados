@@ -1,12 +1,14 @@
-derDiagram
-    Peca ||--o{ Separacao : "1-N"
+```mermaid
+erDiagram
+    Peca ||--o{ Separacao : "contém"
     Peca {
-        int id PK
-        varchar(255) tipo
+        id INT PK
+        tipo VARCHAR
     }
     Separacao {
-        int id PK
-        int id_peca FK
-        timestamp horario_inicial
-        timestamp horario_fim
+        id INT PK
+        id_peca INT FK
+        horario_inicial TIMESTAMP
+        horario_fim TIMESTAMP
     }
+```
