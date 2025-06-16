@@ -11,4 +11,10 @@ erDiagram
         horario_inicial TIMESTAMP
         horario_fim TIMESTAMP
     }
+
+    Dispositivo {
+        id INT PK
+        nome VARCHAR(255)
+        estado BOOLEAN
+    }
 ```
