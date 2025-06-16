@@ -1,6 +1,6 @@
 ```mermaid
 erDiagram
-    Peca ||--o{ Separacao : "contém"
+    Peca ||--o{ Separacao : "separa"
     Peca {
         id INT PK
         tipo VARCHAR
