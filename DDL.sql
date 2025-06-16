@@ -1,5 +1,5 @@
 CREATE TABLE Peca (
-    id INT PRIMARY KEY,
+    id INT AUTO_INCREMENT PRIMARY KEY, 
     tipo VARCHAR(255)
 );
 
@@ -7,6 +7,11 @@ CREATE TABLE Separacao (
     id INT PRIMARY KEY,
     id_peca INT,
     FOREIGN KEY (id_peca) REFERENCES Peca(id),
-    horario_inicial TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    horario_fim TIMESTAMP
+    horario TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE Dispositivo (
+    id INT AUTO_INCREMENT PRIMARY KEY, 
+    nome VARCHAR(255),
+    estado BOOLEAN
 );
