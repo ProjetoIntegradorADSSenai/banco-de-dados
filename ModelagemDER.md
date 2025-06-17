@@ -8,8 +8,7 @@ erDiagram
     Separacao {
         id INT PK
         id_peca INT FK
-        horario_inicial TIMESTAMP
-        horario_fim TIMESTAMP
+        horario TIMESTAMP
     }
 
     Dispositivo {
